@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Welcome</title>
   </head>
   <body>
     <div
-      class="min-h-screen flex gap-5 justify-center items-center flex-wrap bg-gradient-to-b  from-[#0b5f7d] to-[#04759c]"
+      class="min-h-screen flex gap-5 justify-center items-center flex-wrap bg-color"
     >
       <div class="flex p-4 m-8">
-        <img src="./Assets/images/logo.png" class="w-[18rem]" alt="logo" />
+        <img src="./Assets/images/logo.png" class="w-72" alt="logo" />
       </div>
 
-      <div class="flex flex-col w-[30vw] items-center gap-10 px-6 mx-10 mb-4">
+      <div class="flex flex-col items-center gap-10 px-6 mx-10 mb-4">
         <div>
           <h1 class="text-3xl font-bold text-white">Welcome!</h1>
         </div>
@@ -27,14 +28,14 @@
           <div class="flex flex-col gap-2 mt-5 items-center">
             <a href="./components/sign-up.html" target="_blank">
               <button
-                class="p-2 w-[15em] rounded-full bg-[#04759c] text-white shadow-md font-medium"
+                class="p-2 w-60 rounded-full btn-bg text-white shadow-md font-medium"
               >
                 Create Account
               </button></a
             >
             <a href="./components/sign-in.html" target="_blank">
               <button
-                class="p-2 w-[15em] rounded-full bg-[white] border border-[#0e3a77] font-medium"
+                class="p-2 w-60 rounded-full bg-white border border-light-bg font-medium"
               >
                 Sign In
               </button></a

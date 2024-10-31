@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Sign-In Page</title>
   </head>
   <body>
     <div
-      class="min-h-screen flex justify-center items-center bg-gradient-to-b  from-[#0b5f7d] to-[#04759c] gap-4"
+      class="min-h-screen flex justify-center items-center bg-color gap-4"
     >
       <div class="flex flex-col gap-10 items-center lg:grid lg:grid-cols-2 lg:gap-10">
         <!-- LOGO -->
-        <div class="text-2xl col-start-2 text-center lg:pl-[6rem]">
-          <img src="../Assets/images/logo.png" class="w-[18rem]  sm:w-[22rem]" alt="logo" />
+        <div class="text-2xl col-start-2 text-center lg:pl-24">
+          <img src="../Assets/images/logo.png" class="img-width" alt="logo" />
         </div>
 
         <!-- SIGN-UP IMAGE -->
         <div class="text-3xl place-items-center col-start-1">
           <img
             src="../Assets/images/signup.png"
-            class="w-[18rem] sm:w-[22rem] border border-white rounded-xl bg-white"
+            class="img-width border border-white rounded-xl bg-white"
             alt="banner"
           />
         </div>
@@ -30,34 +31,34 @@
         <!-- FORM   -->
         <div class="lg:col-start-2 text-center text-white text-sm sm:text-base">
           <form action="" method="post" class="flex gap-2 flex-col">
-            <h2 class="text-lg font-medium lg:pl-[5rem]">Sign In</h2>
+            <h2 class="text-lg font-medium lg:pl-20">Sign In</h2>
 
             <div class="flex gap-2">
-              <label for="Email" class="w-[5rem] text-right">Email:</label>
+              <label for="Email" class="w-20 text-right">Email:</label>
               <div class="flex-1 flex justify-center">
-                <input type="email" class="text-black p-1 w-[15rem]" />
+                <input type="email" class="text-black p-1 w-60" />
               </div>
             </div>
 
             <div class="flex gap-2 items-center justify-center">
-              <label for="password" class="w-[5rem] text-right"
+              <label for="password" class="w-20 text-right"
                 >Password:</label
               >
               <div class="flex-1 flex justify-center">
-                <input type="password" class="text-black p-1 w-[15rem]" />
+                <input type="password" class="text-black p-1 w-60" />
               </div>
             </div>
-            <div class="flex flex-col gap-5 items-center justify-center pl-[5rem]">
+            <div class="flex flex-col gap-5 items-center justify-center pl-20">
               <button
                 type="submit"
-                class="mt-2 p-1 w-[15rem] rounded-full bg-[#0b5f7d] text-white shadow-md font-medium text-base sm:text-lg font-medium"
+                class="mt-2 p-1 w-60 rounded-full btn-bg text-white shadow-md font-medium text-base sm:text-lg font-medium"
               >
                 Sign In
               </button>
               <a href="./sign-up.html" class="underline">Create New Account</a>
             </div>
           </form>
-          <div class="mt-6 p-2  lg:pl-[5rem]">
+          <div class="mt-6 p-2  lg:pl-20">
             
             <span class="text-xs font-light"
               >In case of Forget Password, Contact the site admin</span
