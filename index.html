@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Welcome</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-</body>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-[#0b5f7d] flex gap-5 justify-center items-center flex-wrap"
+    >
+      <div class="flex p-4 m-8">
+        <img src="./Assets/images/logo.png" class="w-[18rem]" alt="logo" />
+      </div>
+
+      <div class="flex flex-col w-[30vw] items-center gap-10 px-6 mx-10 mb-4">
+        <div>
+          <h1 class="text-3xl font-bold text-white">Welcome!</h1>
+        </div>
+        <div class="flex flex-col justify-center bg-white p-6 rounded-lg">
+          <p class="tracking-tighter text-center leading-tight w-full">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+            doloribus, quod ab aut inventore nihil aperiam? Necessitatibus autem
+            consequatur corrupti, Ad perspiciatis?
+          </p>
+          <div class="flex flex-col gap-2 mt-5 items-center">
+            <a href="./components/sign_up.html" target="_blank">
+              <button
+                class="p-2 w-[15em] rounded-full bg-[#0e3a77] text-white shadow-md font-medium"
+              >
+                Create Account
+              </button></a
+            >
+            <a href="./components/sign-in.html" target="_blank">
+              <button
+                class="p-2 w-[15em] rounded-full bg-[white] border border-[#0e3a77] font-medium"
+              >
+                Sign In
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
