@@ -24,14 +24,14 @@
   <body>
     <div class="min-h-screen flex justify-center items-center bg-gradient-to-b  from-[#0b5f7d] to-[#04759c]  flex flex-wrap gap-4 p-10">
       <div class="flex flex-col items-center gap-10">
-        <img src="../Assets/images/logo.png" class="w-[12rem] sm:w-[16rem]" alt="logo">
+        <img src="../Assets/images/logo.png" class="w-[18rem] sm:w-[22rem]" alt="logo">
         <img src="../Assets/images/banner.jpg" class="w-[18rem] sm:w-[22rem] rounded-xl" alt="banner">
       </div>
 
       <div class="hidden-on-mobile h-[80vh] w-px bg-[#04759c]"></div>
                       <!-- FORM  -->
       <div class="flex flex-col text-white my-4"> 
-        <div class="flex items-center flex-col gap-2 ml-[5rem] sm:ml-[8rem]">
+        <div class="flex items-center flex-col gap-2  lg:ml-[8rem]">
           <h2 class="font-medium">Sign Up</h2>
           <i class="fa-solid fa-user  text-4xl"></i>
           <h3 class="font-awesome">Upload</h3>
@@ -39,58 +39,74 @@
         <div class="flex flex-col items-center my-4 text-sm sm:text-base">
           <form action="" method="post" class="flex flex-col gap-2 sm:gap-3 ">
             <div class="email flex gap-2">
-              <label for="email" class="w-[8rem] sm:w-[10rem] text-right">Email: </label>
+              <label for="email" class="w-[8.5rem] sm:w-[10rem] text-right">Email: </label>
               <input type="email" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem] " placeholder="Provide Your Organistation Email" >
             </div>
             <div class="password flex gap-2">
-              <label for="password" class="w-[8rem] sm:w-[10rem] text-right">Password: </label>
+              <label for="password" class="w-[8.5rem] sm:w-[10rem] text-right">Password: </label>
               <div class="relative w-[13] sm:w-[16rem]">
               <input type="password" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Minimum 8 character">
               <i class="fa-solid fa-eye absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
             </div>
           </div>
             <div class="rePassword flex gap-2">
-              <label for="password" class="w-[8rem] sm:w-[10rem] text-right">Repeat Password: </label>
+              <label for="password" class="w-[8.5rem] sm:w-[10rem] text-right">Repeat Password: </label>
               <div class="relative w-[13] sm:w-[16rem]">
               <input type="password" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Must Match the password above">
               <i class="fa-solid fa-eye absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
             </div>
             </div>
             <div class="fName flex gap-2">
-              <label for="name" class="w-[8rem] sm:w-[10rem] text-right">Full Name: </label>
+              <label for="name" class="w-[8.5rem] sm:w-[10rem] text-right">Full Name: </label>
               <input type="name" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Write full name as per NIC">
             </div>
             <div class="eType flex gap-2">
-              <label for="eType" class="w-[8rem] sm:w-[10rem] text-right">Employment Type: </label>
-              <input type="text" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Select from drop-down" list="employment-types">
+              <label for="eType" class="w-[8.5rem] sm:w-[10rem] text-right">Employment Type: </label>
+              <select name="employment-type" id="employment-type" class="text-black  p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]   ">
+                <option class="text-xs">Select from drop-down</option>
+                <option value="manager" >Manager</option>
+                <option value="worker">Worker</option>
+                <option value="technician">Technician</option>
+                <option value="builder">Builder</option>
+                <option value="other">other</option>
+              </select>
+              <!-- <input type="d"   placeholder="Select from drop-down" list="employment-types">
               <datalist id="employment-types">
                 <option value="Front-end Dev"></option>
                 <option value="Back-end Dev"></option>
-              </datalist>
+              </datalist> -->
             </div>
             <div class="eNum flex gap-2">
-              <label for="eNum" class="w-[8rem] sm:w-[10rem] text-right">Employment Number: </label>
+              <label for="eNum" class="w-[8.5rem] sm:w-[10rem] text-right">Employment Number: </label>
               <input type="number" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem] "  placeholder="Provide Your employe ID">
             </div>
             <div class="department flex gap-2">
-              <label for="department" class="w-[8rem] sm:w-[10rem] text-right">Department: </label>
-              <input type="d" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Select from drop-down" list="departments">
+              <label for="department" class="w-[8.5rem] sm:w-[10rem] text-right">Department: </label>
+              <select name="employment-type" id="employment-type" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]   ">
+                <option class="text-xs">Select from drop-down</option>
+                <option value="manager">Manager</option>
+                <option value="worker">Worker</option>
+                <option value="technician">Technician</option>
+                <option value="builder">Builder</option>
+                <option value="other">other</option>
+              </select>
+              <!-- <input type="d" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Select from drop-down" list="departments">
               <datalist id="departments">
                 <option value="Devs"></option>
                 <option value="Designers"></option>
-              </datalist>
+              </datalist> -->
             </div>
             <div class="department flex gap-2">
-              <label for="department" class="w-[8rem] sm:w-[10rem] text-right">Designation: </label>
+              <label for="department" class="w-[8.5rem] sm:w-[10rem] text-right">Designation: </label>
               <input type="d" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Enter your Designation here">
             </div>
             <div class="contact flex gap-2">
-              <label for="contact" class="w-[8rem] sm:w-[10rem] text-right">Contact Number: </label>
+              <label for="contact" class="w-[8.5rem] sm:w-[10rem] text-right">Contact Number: </label>
               <input type="number" class="text-black p-1 sm:p-2 text-xs w-[13rem] sm:w-[16rem]  "  placeholder="Enter contact number with country code">
             </div>
 
-            <div class="flex flex-col items-center gap-2 ml-[6rem] sm:ml-[10rem]">
-              <p class="text-[.7rem] font-light">By creating account, You agree to term & conditions</p>
+            <div class="flex mt-2 flex-col items-center gap-2  lg:ml-[10rem]">
+              <p class="text-[.7rem] font-light ">By creating account, You agree to term & conditions</p>
               <button type="submit" class="p-1 w-[13rem] sm:w-[16rem] rounded-full bg-[#0b5f7d] text-white shadow-md font-medium text-base sm:text-lg font-medium">Create Account</button>
               <a href="./sign-in.html" class="underline">Sign In</a>
             </div>
